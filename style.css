@@ -1,0 +1,128 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: white;
+}
+
+/* CENTRALIZAÇÃO */
+.login-container,
+.reveal-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WRAPPER */
+.login-wrapper {
+  text-align: center;
+}
+
+/* LOGO */
+.logo-img {
+  display: block;
+  margin: 0 auto 25px auto;
+  width: 90px;
+  filter: brightness(0) invert(1);
+}
+
+/* CARD */
+.login-box,
+.reveal-box {
+  background: rgba(28, 28, 28, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 35px;
+  width: 340px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  animation: fadeIn 0.5s ease;
+}
+
+/* TÍTULO */
+.login-box h2,
+.reveal-box h2 {
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  max-width: 280px;
+  padding: 12px;
+  margin: 8px auto;
+  display: block;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: white;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #0078f2;
+  transform: scale(1.02);
+  outline: none;
+}
+
+/* BOTÃO */
+button {
+  width: 100%;
+  max-width: 280px;
+  padding: 12px;
+  margin: 15px auto 0 auto;
+  display: block;
+  background: linear-gradient(90deg, #0078f2, #00a2ff);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(0,120,255,0.6);
+}
+
+/* TEXTO EXTRA */
+.extra {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* LISTA */
+ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* PIADA */
+.piada {
+  margin-top: 10px;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
