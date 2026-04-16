@@ -14,5 +14,4 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-// 🔥 ISSO FALTAVA
 export const db = getDatabase(app);

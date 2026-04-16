@@ -15,7 +15,6 @@ window.simular = async () => {
       data: new Date().toLocaleString()
     });
 
-    // 👉 REDIRECIONA PRA REVELAÇÃO
     window.location.href = "revelacao.html";
 
   } catch (erro) {
